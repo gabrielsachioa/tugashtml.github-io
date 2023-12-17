@@ -1,0 +1,54 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    background-color:#ffebcd;
+    padding: .4em;
+}
+
+.aboutme, .skill p {
+    font-weight: bold;
+}
+
+ul li {
+    line-height: 3rem;
+}
+
+.hero {
+    display: flex;
+}
+
+.foto {
+    height: 38rem;
+    padding: 1.5rem;
+    background-color: #00ffff;
+}
+
+.hero .foto img {
+    max-width: 100%;
+    height: 25rem;
+}
+
+.profil {
+    margin-left: 2em;
+    flex-direction: column;
+    align-self: center;
+}
+
+@media (max-width: 700px) {
+    .hero {
+        display: block;
+    }
+
+    .profil {
+        margin-left: 0;
+    }
+}
